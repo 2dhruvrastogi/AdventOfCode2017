@@ -1,4 +1,4 @@
-f = open("input5.1.py", "r")
+f = open("input5.py", "r")
 inp = []
 steps = 0
 for line in f:

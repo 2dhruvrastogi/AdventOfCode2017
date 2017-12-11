@@ -6,7 +6,7 @@ def change_val(reg, op, val):
         dict[reg] += val
     else:
         dict[reg] -= val
-
+highest = 0
 for line in f:
     curr_line = line.split(" ")
     if curr_line[0] not in dict:
@@ -33,4 +33,6 @@ for line in f:
             change_val(curr_line[0], curr_line[1], int(curr_line[2]))
     else:
         continue
-print(max(dict.values()))
+    if max(dict.values()) > highest:
+        highest = max(dict.values())
+print(highest)

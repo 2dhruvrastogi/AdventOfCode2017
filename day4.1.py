@@ -1,4 +1,4 @@
-f = open("input4.1.py", "r")
+f = open("input4.py", "r")
 res = 0
 for line in f:
     s = dict()

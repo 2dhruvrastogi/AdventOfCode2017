@@ -1,4 +1,4 @@
-f = open('input2.1.txt', "r")
+f = open('input2.txt', "r")
 res = 0
 for line in f:
     curr_line = line.split("\t")
